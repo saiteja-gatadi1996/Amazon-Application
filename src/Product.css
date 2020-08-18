@@ -1,0 +1,43 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* above align gave button smaller */
+    justify-content: flex-end;
+    width: 100%;
+    /* above width code just did movement */
+    min-width: 100px;
+    max-height: 400px; 
+    margin: 10px;
+    padding:20px;
+    background-color: white;
+    z-index: 1;
+}
+.product__rating{
+    display: flex;
+}
+
+.product__info{
+    height: 100px;
+    margin-bottom: 15px ;
+}
+
+/* instead of giving classname for img */
+.product>img{
+max-height: 200px; 
+/* book size */
+width: 100%;
+object-fit: contain;
+/* keep the book stable insted of aspect wide */
+margin-bottom: 15px;
+}
+
+.product__price{
+    margin-top: 5px;
+}
+
+.product>button{
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+}
